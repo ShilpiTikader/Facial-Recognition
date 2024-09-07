@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to Face Recognition Authentication{% endblock %}
+
+{% block content %}
+<!--<div class="container">-->
+<!--    <h1>Welcome to Face Recognition Authentication</h1>-->
+<!--    <p>Please proceed to the <a href="{{ url_for('signupUser') }}" class="btn btn-primary">sign-up page</a> if you are a new user.</p>-->
+<!--    <p>Already have an account? <a href="{{ url_for('loginUser') }}" class="btn btn-success">Login here</a>.</p>-->
+<!--</div>-->
+<section class="section-container">
+    <div class="container">
+        <div class="content-grid">
+            <img src="Untitled%201.png" alt="Welcome to our project" class="image">
+            <div class="content-block">
+                <h1 class="heading">Secure Your Files with Face Recognition</h1>
+                <p class="description">Access your files with confidence. Our system combines state-of-the-art face recognition with military-grade encryption to ensure that only you can unlock your files. </p>
+                <ul class="features-list">
+                    <li>
+                        <span class="check-icon"> </span>
+                        Secure access using advanced face recognition
+                    </li>
+                    <li>
+                        <span class="check-icon"> </span>
+                        End-to-end encryption for maximum file security
+                    </li>
+                    <li>
+                        <span class="check-icon"> </span>
+                         Intuitive file management with seamless user experience
+                    </li>
+                </ul>
+                <div class="button-group">
+                    <a href="{{ url_for('signupUser') }}" class="btn">Sign Up</a>
+                    <a href="#" class="button secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

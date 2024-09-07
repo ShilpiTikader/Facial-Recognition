@@ -1,0 +1,148 @@
+/*!* Custom CSS styles *!*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-container {
+    padding: 6rem 0;  /* Adjust padding as needed */
+    /*background-color: #F8F9FB; !* Light background color *!*/
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* Content Grid Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;  /* For small screens */
+    align-items: center; /* Vertically center content */
+}
+
+/* Image Styles */
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Content Block Styles */
+.content-block {
+    padding: 2rem; /* Adjust padding if needed */
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif; /* or your chosen font */
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #242E4C; /* Adjust heading color */
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #737C8B; /* Adjust paragraph text color */
+    margin-bottom: 2rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.check-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    /* Assuming a checkmark icon, replace with your solution */
+    background-color: #2ECC71; /* Green checkmark color */
+    border-radius: 50%;
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    display: inline-flex;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.button.primary {
+    background-color: #2ECC71; /* Green button color */
+    color: #fff; /* White text color */
+}
+
+.button.primary:hover {
+    background-color: #27AE60; /* Darker green on hover */
+}
+
+.button.secondary {
+    background-color: #fff; /* White button color */
+    border: 1px solid #E0E4E8; /* Gray border */
+    color: #242E4C; /* Text color */
+}
+
+.button.secondary:hover {
+    background-color: #F5F7FA; /* Light gray background on hover */
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr 500px;
+        gap: 2rem;
+    }
+}
